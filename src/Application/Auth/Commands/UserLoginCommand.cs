@@ -16,6 +16,7 @@ public sealed record UserLoginCommand(string Username, string Password, bool Rem
 
     public bool RememberMe { get; set; } = RememberMe;
 }
+// gio
 
 [EditorBrowsable(EditorBrowsableState.Never)]
 public sealed class UserLoginValidator : AbstractValidator<UserLoginCommand>
